@@ -7,8 +7,6 @@
 [![Go Doc](https://godoc.org/github.com/kleister/go-forge?status.svg)](http://godoc.org/github.com/kleister/go-forge)
 [![Go Report](http://goreportcard.com/badge/github.com/kleister/go-forge)](http://goreportcard.com/report/github.com/kleister/go-forge)
 
-**This project is under heavy development, it's not in a working state yet!**
-
 This repository will provides helpers related to Forge.
 
 
