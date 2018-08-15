@@ -11,10 +11,10 @@ func main() {
 	forge, err := version.FromDefault()
 
 	if err != nil {
-		log.Fatalf("%s", err)
+		log.Fatalln(err)
 	}
 
 	for _, version := range forge.Releases {
-		log.Printf("Forge v%s", version.ID)
+		log.Println("Forge v", version.ID)
 	}
 }
