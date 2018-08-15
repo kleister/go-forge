@@ -12,7 +12,13 @@ This repository will provides helpers related to Forge.
 
 ## Development
 
-TBD
+Make sure you have a working Go environment, for further reference or a guide take a look at the [install instructions](http://golang.org/doc/install.html). This project requires Go >= v1.8. It is also possible to just simply execute the `go get github.com/kleister/go-forge/...` command, but we prefer to use our `Makefile`:
+
+```bash
+go get -d github.com/kleister/go-forge/...
+cd $GOPATH/src/github.com/kleister/go-forge
+make retool sync clean generate test
+```
 
 
 ## Examples
