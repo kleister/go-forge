@@ -30,21 +30,53 @@ make retool sync clean generate test
 package main
 
 import (
-	"log"
+	"fmt"
+	"os"
 
 	"github.com/kleister/go-forge/version"
 )
 
 func main() {
-	log.Println("Fetching Forge versions...")
+	fmt.Println("Fetching Forge versions...")
 	forge, err := version.FromDefault()
 
 	if err != nil {
-		log.Fatalln(err)
+		fmt.Println("Error:", err)
+		os.Exit(1)
 	}
 
 	for _, version := range forge.Releases {
-		log.Println("Forge v", version.ID)
+		fmt.Println(version.ID)
+	}
+}
+```
+
+### Sort Forge versions by ID
+
+[embedmd]:# (examples/sorted/main.go go)
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+
+	"github.com/kleister/go-forge/version"
+)
+
+func main() {
+	fmt.Println("Fetching Forge versions...")
+	forge, err := version.FromDefault()
+
+	if err != nil {
+		fmt.Println("Error:", err)
+		os.Exit(1)
+	}
+
+	version.ByID(forge.Releases).Sort()
+
+	for _, version := range forge.Releases {
+		fmt.Println(version.ID)
 	}
 }
 ```

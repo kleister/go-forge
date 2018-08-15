@@ -16,6 +16,8 @@ func main() {
 		os.Exit(1)
 	}
 
+	version.ByVersion(forge.Releases).Sort()
+
 	for _, version := range forge.Releases {
 		fmt.Println(version.ID)
 	}
