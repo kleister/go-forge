@@ -73,9 +73,41 @@ func main() {
 		os.Exit(1)
 	}
 
-	version.ByID(forge.Releases).Sort()
+	version.ByVersion(forge.Releases).Sort()
 
 	for _, version := range forge.Releases {
+		fmt.Println(version.ID)
+	}
+}
+```
+
+### Filter versions by constraints
+
+[embedmd]:# (examples/filter/main.go go)
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+
+	"github.com/kleister/go-forge/version"
+)
+
+func main() {
+	fmt.Println("Fetching Forge versions...")
+	forge, err := version.FromDefault()
+
+	if err != nil {
+		fmt.Println("Error:", err)
+		os.Exit(1)
+	}
+
+	f := &version.Filter{
+		Version: ">=13.20,<14.23.4",
+	}
+
+	for _, version := range forge.Releases.Filter(f) {
 		fmt.Println(version.ID)
 	}
 }
