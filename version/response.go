@@ -1,10 +1,10 @@
 package version
 
 import (
+	"encoding/json"
 	"fmt"
 	"time"
 
-	"github.com/json-iterator/go"
 	"github.com/kleister/go-forge/version/internal"
 	"github.com/mcuadros/go-version"
 )
@@ -23,7 +23,7 @@ type Response struct {
 func (r *Response) UnmarshalJSON(b []byte) error {
 	result := internal.Root{}
 
-	if err := jsoniter.Unmarshal(b, &result); err != nil {
+	if err := json.Unmarshal(b, &result); err != nil {
 		return err
 	}
 
