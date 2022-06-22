@@ -10,7 +10,7 @@ import (
 
 const (
 	// DefaultURL defines the default Forge version URL.
-	DefaultURL = "http://files.minecraftforge.net/maven/net/minecraftforge/forge/json"
+	DefaultURL = "https://files.minecraftforge.net/net/minecraftforge/forge/maven-metadata.json"
 )
 
 // FromString parses a version definition from string.

@@ -1,195 +1,23 @@
 {
-  "adfocus": "271228",
-  "artifact": "forge",
-  "branches": {
-    "1.10.0": [
-      1981,
-      1982,
-      1983,
-      1984,
-      1986,
-      1989,
-      1991,
-      1992,
-      1993,
-      1994,
-      1995,
-      1996,
-      1997,
-      1999,
-      2000,
-      2001,
-      2002,
-      2003,
-      2004,
-      2005,
-      2006,
-      2007
-    ]
-  },
-  "homepage": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/",
-  "mcversion": {
-    "1.12.2": [
-      2486,
-      2487,
-      2489,
-      2490,
-      2491,
-      2492,
-      2493,
-      2494,
-      2495,
-      2496
-    ]
-  },
-  "name": "Minecraft Forge",
-  "number": {
-    "1": {
-      "branch": null,
-      "build": 1,
-      "files": [
-        [
-          "zip",
-          "src",
-          "fd397591148fac49a7d57aafdccac6a3"
-        ],
-        [
-          "zip",
-          "client",
-          "4d96d6e8f1543c5fa1184f4771ce16e2"
-        ],
-        [
-          "zip",
-          "server",
-          "d7e1df9a91ded33be81ee8226b027c2f"
-        ],
-        [
-          "txt",
-          "changelog",
-          "df98aec1a868ce99532c64f246387d55"
-        ]
-      ],
-      "mcversion": "1.1",
-      "modified": 1411979820,
-      "version": "1.3.2.1"
-    },
-    "2618": {
-      "branch": null,
-      "build": 2618,
-      "files": [
-        [
-          "zip",
-          "mdk",
-          "54f21f4d24df237bc57b2f6ca14a0099"
-        ],
-        [
-          "txt",
-          "changelog",
-          "3ae7f0c767ed51370e4d5fee73aa8729"
-        ],
-        [
-          "jar",
-          "universal",
-          "243355e7bfa7b64fc62044c5bbdd2110"
-        ],
-        [
-          "jar",
-          "userdev",
-          "d8fc283065fa9e1c8d08dc31001ba59a"
-        ],
-        [
-          "exe",
-          "installer-win",
-          "c2eaa1c3f911eeba0b61b2be4eec67dd"
-        ],
-        [
-          "jar",
-          "installer",
-          "334291fa088f392f71748bc7a3a52f94"
-        ]
-      ],
-      "mcversion": "1.12.2",
-      "modified": 1518844440,
-      "version": "14.23.2.2618"
-    },
-    "2619": {
-      "branch": null,
-      "build": 2619,
-      "files": [
-        [
-          "zip",
-          "mdk",
-          "9497c03dbd9cf2f1c03c7d265114af9d"
-        ],
-        [
-          "txt",
-          "changelog",
-          "025f05de0bc068c2077ffa60d380a579"
-        ],
-        [
-          "jar",
-          "universal",
-          "135e5904c435d5915c00b8711f01b585"
-        ],
-        [
-          "jar",
-          "userdev",
-          "e9ec37a809139dbb98efadefd9cb79f9"
-        ],
-        [
-          "exe",
-          "installer-win",
-          "044ad07d8da6f223de75b9d3f987df23"
-        ],
-        [
-          "jar",
-          "installer",
-          "63a73a3486d01aec935874a9132af44a"
-        ]
-      ],
-      "mcversion": "1.12.2",
-      "modified": 1519277400,
-      "version": "14.23.2.2619"
-    }
-  },
-  "promos": {
-    "1.10-latest": 2000,
-    "1.10.2-latest": 2511,
-    "1.10.2-recommended": 2185,
-    "1.11-latest": 2199,
-    "1.11-recommended": 2189,
-    "1.11.2-latest": 2588,
-    "1.11.2-recommended": 2386,
-    "1.12-latest": 2443,
-    "1.12-recommended": 2387,
-    "1.12.1-latest": 2485,
-    "1.12.1-recommended": 2478,
-    "1.12.2-latest": 2619,
-    "1.12.2-recommended": 2611,
-    "1.5.2-latest": 738,
-    "1.5.2-recommended": 737,
-    "1.6.1-latest": 775,
-    "1.6.2-latest": 871,
-    "1.6.2-recommended": 871,
-    "1.6.3-latest": 878,
-    "1.6.4-latest": 1345,
-    "1.6.4-recommended": 1345,
-    "1.7.10-latest": 1614,
-    "1.7.10-latest-1.7.10": 1343,
-    "1.7.10-recommended": 1558,
-    "1.7.2-latest": 1147,
-    "1.7.2-recommended": 1121,
-    "1.8-latest": 1577,
-    "1.8-recommended": 1563,
-    "1.8.8-latest": 1655,
-    "1.8.9-latest": 2318,
-    "1.8.9-recommended": 1722,
-    "1.9-recommended": 1887,
-    "1.9.4-latest": 2051,
-    "1.9.4-recommended": 1976,
-    "latest": 2619,
-    "latest-1.7.10": 1343,
-    "recommended": 2611
-  },
-  "webpath": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/"
+  "1.12.2": [
+    "1.12.2-14.23.0.2486",
+    "1.12.2-14.23.0.2487",
+    "1.12.2-14.23.0.2489",
+    "1.12.2-14.23.0.2490",
+    "1.12.2-14.23.0.2491"
+  ],
+  "1.18.2": [
+    "1.18.2-40.0.0",
+    "1.18.2-40.0.1",
+    "1.18.2-40.0.2",
+    "1.18.2-40.0.3",
+    "1.18.2-40.0.4"
+  ],
+  "1.19": [
+    "1.19-41.0.1",
+    "1.19-41.0.2",
+    "1.19-41.0.3",
+    "1.19-41.0.4",
+    "1.19-41.0.5"
+  ]
 }

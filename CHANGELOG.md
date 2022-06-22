@@ -1,11 +1,13 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.0] - 2022-06-23
 
 ### Changed
 
 * Migrate to Drone Cloud and v1.x.x
 * Update dependencies to latest versions
+* Replace forge URL, old one does not work anymore
+* Dropped support for latest and recommended
 
 ## [0.2.1] - 2018-11-04
 

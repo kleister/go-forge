@@ -3,7 +3,7 @@ package version
 import (
 	"encoding/json"
 	"fmt"
-	"time"
+	"strings"
 
 	"github.com/kleister/go-forge/version/internal"
 	"github.com/mcuadros/go-version"
@@ -12,6 +12,9 @@ import (
 var (
 	// OldestMinecraft defines the oldest allowed Minecraft version.
 	OldestMinecraft = "1.6.4"
+
+	// DownloadHomepage defines the download base url to fetch installer.
+	DownloadHomepage = "https://maven.minecraftforge.net/net/minecraftforge/forge"
 )
 
 // Response is the standard root element for the version list.
@@ -27,28 +30,23 @@ func (r *Response) UnmarshalJSON(b []byte) error {
 		return err
 	}
 
-	for _, row := range result.Number {
-		if version.Compare(row.Mcversion, OldestMinecraft, ">") {
+	for minecraft, versions := range result {
+		if version.Compare(minecraft, OldestMinecraft, "<=") {
+			continue
+		}
+
+		for _, version := range versions {
+			split := strings.Split(version, "-")
+
 			v := Version{
-				ID:        row.Version,
-				Minecraft: row.Mcversion,
+				ID:        split[1],
+				Minecraft: minecraft,
 				URL: fmt.Sprintf(
-					"%s%s-%s/forge-%s-%s-universal.jar",
-					result.Homepage,
-					row.Mcversion,
-					row.Version,
-					row.Mcversion,
-					row.Version,
+					"%s/%s/forge-%s-universal.jar",
+					DownloadHomepage,
+					version,
+					version,
 				),
-				Release: time.Unix(int64(row.Modified), 0),
-			}
-
-			if val, ok := result.Promos[fmt.Sprintf("%s-recommended", row.Mcversion)]; ok {
-				v.Recommended = row.Build == val
-			}
-
-			if val, ok := result.Promos[fmt.Sprintf("%s-latest", row.Mcversion)]; ok {
-				v.Latest = row.Build == val
 			}
 
 			r.Releases = append(r.Releases, v)
