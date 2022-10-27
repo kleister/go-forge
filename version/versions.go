@@ -28,7 +28,7 @@ func (v Versions) Filter(filter *Filter) Versions {
 		}
 
 		if filter.Minecraft != "" {
-			if !mc.Match(row.ID) {
+			if !mc.Match(row.Minecraft) {
 				continue
 			}
 		}

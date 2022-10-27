@@ -17,7 +17,8 @@ func main() {
 	}
 
 	f := &version.Filter{
-		Version: ">=13.20,<14.23.4",
+		Version:   ">=13.20,<14.23.4",
+		Minecraft: ">1.12",
 	}
 
 	for _, version := range forge.Releases.Filter(f) {

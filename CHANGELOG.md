@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1] - 2022-10-27
+
+### Changed
+
+* Fixed filter for minecraft versions
+* Updated all direct dependencies
+
 ## [1.0.0] - 2022-06-23
 
 ### Changed
