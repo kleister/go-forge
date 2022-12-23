@@ -1,24 +1,22 @@
-# Library for Forge
+# go-forge
 
-[![Build Status](https://cloud.drone.io/api/badges/kleister/go-forge/status.svg)](https://cloud.drone.io/kleister/go-forge)
-[![Join the Matrix chat at https://matrix.to/#/#kleister:matrix.org](https://img.shields.io/badge/matrix-%23kleister%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#kleister:matrix.org)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e96f91f1bce14e049a3d3db93baa4683)](https://www.codacy.com/app/kleister/go-forge?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kleister/go-forge&amp;utm_campaign=Badge_Grade)
-[![Go Doc](https://godoc.org/github.com/kleister/go-forge?status.svg)](http://godoc.org/github.com/kleister/go-forge)
-[![Go Report](http://goreportcard.com/badge/github.com/kleister/go-forge)](http://goreportcard.com/report/github.com/kleister/go-forge)
+[![General Workflow](https://github.com/kleister/go-forge/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-forge/actions/workflows/general.yml) [![Join the Matrix chat at https://matrix.to/#/#kleister:matrix.org](https://img.shields.io/badge/matrix-%23kleister%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#kleister:matrix.org) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/df9689895d604266ab02a3e18a686b0a)](https://www.codacy.com/gh/kleister/go-forge/dashboard?utm_source=github.com&utm_medium=referral&utm_content=kleister/go-forge&utm_campaign=Badge_Grade) [![Go Reference](https://pkg.go.dev/badge/github.com/kleister/go-forge.svg)](https://pkg.go.dev/github.com/kleister/go-forge)
 
 This repository provides helpers related to Minecraft Forge.
 
-
 ## Development
 
-Make sure you have a working Go environment, for further reference or a guide take a look at the [install instructions](http://golang.org/doc/install.html). This project requires Go >= v1.11 because we are using Go modules. It is also possible to just simply execute the `go get github.com/kleister/go-forge/...` command, but we prefer to use our `Makefile`:
+Make sure you have a working Go environment, for further reference or a guide
+take a look at the [install instructions][golang]. This project doesn't enforce
+a specific Go version, but we are trying to use the latest stable releases. It
+is also possible to simply execute `go get`, but we prefer to use our `Makefile`:
 
-```bash
-go get -d github.com/kleister/go-forge/...
-cd $GOPATH/src/github.com/kleister/go-forge
-make sync gorunpkg clean generate test
+```console
+git clone https://github.com/kleister/go-forge.git
+cd go-forge
+
+make clean generate test
 ```
-
 
 ## Examples
 
@@ -103,7 +101,8 @@ func main() {
 	}
 
 	f := &version.Filter{
-		Version: ">=13.20,<14.23.4",
+		Version:   ">=13.20,<14.23.4",
+		Minecraft: ">1.12",
 	}
 
 	for _, version := range forge.Releases.Filter(f) {
@@ -112,29 +111,27 @@ func main() {
 }
 ```
 
-
 ## Security
 
-If you find a security issue please contact kleister@webhippie.de first.
-
+If you find a security issue please contact
+[kleister@webhippie.de](mailto:kleister@webhippie.de) first.
 
 ## Contributing
 
 Fork -> Patch -> Push -> Pull Request
 
-
 ## Authors
 
-* [Thomas Boerger](https://github.com/tboerger)
-
+-   [Thomas Boerger](https://github.com/tboerger)
 
 ## License
 
 Apache-2.0
 
-
 ## Copyright
 
-```
+```console
 Copyright (c) 2018 Thomas Boerger <thomas@webhippie.de>
 ```
+
+[golang]: http://golang.org/doc/install.html

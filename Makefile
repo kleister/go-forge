@@ -1,18 +1,14 @@
+include .bingo/Variables.mk
+
+SHELL := bash
 NAME := go-forge
 IMPORT := github.com/kleister/$(NAME)
-SHELL := bash
 
-ifeq ($(OS), Windows_NT)
-	HAS_GORUNPKG := $(shell where gorunpkg)
-else
-	HAS_GORUNPKG := $(shell command -v gorunpkg)
-endif
+GOBUILD ?= CGO_ENABLED=0 go build
+PACKAGES ?= $(shell go list ./...)
+SOURCES ?= $(shell find . -name "*.go" -type f)
 
-PACKAGES ?= $(shell go list ./... | grep -v /vendor/)
-SOURCES ?= $(shell find . -name "*.go" -type f -not -path "./vendor/*")
-GENERATE ?= $(PACKAGES)
-
-TAGS ?=
+TAGS ?= netgo
 LDFLAGS += -s -w
 
 .PHONY: all
@@ -35,31 +31,29 @@ vet:
 	go vet $(PACKAGES)
 
 .PHONY: staticcheck
-staticcheck: gorunpkg
-	gorunpkg honnef.co/go/tools/cmd/staticcheck -tags '$(TAGS)' $(PACKAGES)
+staticcheck: $(STATICCHECK)
+	$(STATICCHECK) -tags '$(TAGS)' $(PACKAGES)
 
 .PHONY: lint
-lint: gorunpkg
-	for PKG in $(PACKAGES); do gorunpkg golang.org/x/lint/golint -set_exit_status $$PKG || exit 1; done;
+lint: $(REVIVE)
+	for PKG in $(PACKAGES); do $(REVIVE) -config revive.toml -set_exit_status $$PKG || exit 1; done;
 
 .PHONY: generate
-generate: gorunpkg
-	go generate $(GENERATE)
+generate:
+	go generate $(PACKAGES)
+
+.PHONY: changelog
+changelog: $(CALENS)
+	$(CALENS) >| CHANGELOG.md
 
 .PHONY: embedmd
-embedmd: gorunpkg
-	gorunpkg github.com/campoy/embedmd -w README.md
+embedmd: $(EMBEDMD)
+	$(EMBEDMD) -w README.md
 
 .PHONY: test
-test: gorunpkg
-	gorunpkg github.com/haya14busa/goverage -v -coverprofile coverage.out $(PACKAGES)
+test: test
+	go test -coverprofile coverage.out $(PACKAGES)
 
 .PHONY: build
 build: $(SOURCES)
 	go build -i -v -tags '$(TAGS)' -ldflags '$(LDFLAGS)' -o /dev/null ./...
-
-.PHONY: gorunpkg
-gorunpkg:
-ifndef HAS_GORUNPKG
-	go get -u github.com/vektah/gorunpkg
-endif
