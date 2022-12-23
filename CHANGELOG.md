@@ -1,48 +1,120 @@
-# Changelog
+# Changelog for 1.0.1
 
-## [1.0.1] - 2022-10-27
+The following sections list the changes for 1.0.1.
 
-### Changed
+## Summary
 
-* Fixed filter for minecraft versions
-* Updated all direct dependencies
+ * Fix #21: Fixed filtering by Minecraft version
 
-## [1.0.0] - 2022-06-23
+## Details
 
-### Changed
+ * Bugfix #21: Fixed filtering by Minecraft version
 
-* Migrate to Drone Cloud and v1.x.x
-* Update dependencies to latest versions
-* Replace forge URL, old one does not work anymore
-* Dropped support for latest and recommended
+   The filter for Minecraft versions haven't been working as expected because of a typo within the
+   filter, now filtering by Mionecraft versions works as expected.
 
-## [0.2.1] - 2018-11-04
-
-### Changed
-
-* Use stdlib JSON parser instead of jsoniter
-* Use go modules instead of dep
-
-## [0.2.0] - 2018-08-15
-
-### Added
-
-* Proper development notes within readme
-* Integrated sortable interface for versions
-* Filter versions by version constraints
-
-### Changed
-
-* Better formatting within versions example
-* Limit version list to Minecraft >1.6.4
-
-### Removed
-
-* Drop development note from README
+   https://github.com/kleister/go-forge/issues/21
 
 
-## [0.1.0] - 2018-08-15
+# Changelog for 1.0.0
 
-### Added
+The following sections list the changes for 1.0.0.
 
-* Initial release
+## Summary
+
+ * Chg #23: Dropped support for latest and recommended
+ * Chg #23: Replaced Forge version source URL
+
+## Details
+
+ * Change #23: Dropped support for latest and recommended
+
+   Since we had to change the URL for fetching te forge version information we also had to drop the
+   attributes to show the latest and the recommended version of Forge.
+
+   https://github.com/kleister/go-forge/issues/23
+
+ * Change #23: Replaced Forge version source URL
+
+   Since the old used URL for fetching all available Forge versions doesn't work anymore we had to
+   replace it with a new URL which sadly offers a different set of attribuites.
+
+   https://github.com/kleister/go-forge/issues/23
+
+
+# Changelog for 0.2.1
+
+The following sections list the changes for 0.2.1.
+
+## Summary
+
+ * Chg #2: Switch to go modules instead of gopkg
+ * Chg #2: Use standard JSON parser instead of jsoniter
+
+## Details
+
+ * Change #2: Switch to go modules instead of gopkg
+
+   As go modules have been the new standard we switched to it in favor of using gopkg.
+
+   https://github.com/kleister/go-forge/pull/2
+
+ * Change #2: Use standard JSON parser instead of jsoniter
+
+   Intitially we implemented jsoniter as a JSON parser library, but in the end we decided that it's
+   better to stick with the standard library JSON parser.
+
+   https://github.com/kleister/go-forge/pull/2
+
+
+# Changelog for 0.2.0
+
+The following sections list the changes for 0.2.0.
+
+## Summary
+
+ * Chg #23: Limited list of versions
+ * Chg #1: Integrate the sortable interface
+ * Chg #1: Integrate a version filter
+
+## Details
+
+ * Change #23: Limited list of versions
+
+   To reduce the complexity of the list of available versions we added a default limit to list only
+   versions for Minecraft newer than v1.6.4.
+
+   https://github.com/kleister/go-forge/issues/23
+
+ * Change #1: Integrate the sortable interface
+
+   To get a properly sorted list of Forge versions we implemented the sortable interface for a
+   slice of versions.
+
+   https://github.com/kleister/go-forge/pull/1
+
+ * Change #1: Integrate a version filter
+
+   To be able to filter out specific versions we added a filtering method to a slice of Forge
+   versions.
+
+   https://github.com/kleister/go-forge/pull/1
+
+
+# Changelog for 0.1.0
+
+The following sections list the changes for 0.1.0.
+
+## Summary
+
+ * Chg #23: Initial release of basic version
+
+## Details
+
+ * Change #23: Initial release of basic version
+
+   Just prepared an initial basic version which could be released to the public.
+
+   https://github.com/kleister/go-forge/issues/23
+
+
