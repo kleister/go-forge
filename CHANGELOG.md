@@ -73,18 +73,11 @@ The following sections list the changes for 0.2.0.
 
 ## Summary
 
- * Chg #23: Limited list of versions
  * Chg #1: Integrate the sortable interface
  * Chg #1: Integrate a version filter
+ * Chg #23: Limited list of versions
 
 ## Details
-
- * Change #23: Limited list of versions
-
-   To reduce the complexity of the list of available versions we added a default limit to list only
-   versions for Minecraft newer than v1.6.4.
-
-   https://github.com/kleister/go-forge/issues/23
 
  * Change #1: Integrate the sortable interface
 
@@ -99,6 +92,13 @@ The following sections list the changes for 0.2.0.
    versions.
 
    https://github.com/kleister/go-forge/pull/1
+
+ * Change #23: Limited list of versions
+
+   To reduce the complexity of the list of available versions we added a default limit to list only
+   versions for Minecraft newer than v1.6.4.
+
+   https://github.com/kleister/go-forge/issues/23
 
 
 # Changelog for 0.1.0
