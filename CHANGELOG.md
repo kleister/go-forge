@@ -8,15 +8,16 @@
 * apply new repo structure and integrate automated releases ([ff0488e](https://github.com/kleister/go-forge/commit/ff0488e7c1245a5ebed2bebd295347ef4e24bb70))
 * **major:** update actions/setup-go action to v4 ([#26](https://github.com/kleister/go-forge/issues/26)) ([c79cbbe](https://github.com/kleister/go-forge/commit/c79cbbe047d50d38192fccbcdf46912c15fa5f7f))
 
-for 1.0.1
+
+## [1.0.1]() (2022-10-27)
 
 The following sections list the changes for 1.0.1.
 
-## Summary
+### Summary
 
  * Fix #21: Fixed filtering by Minecraft version
 
-## Details
+### Details
 
  * Bugfix #21: Fixed filtering by Minecraft version
 
@@ -26,16 +27,16 @@ The following sections list the changes for 1.0.1.
    https://github.com/kleister/go-forge/issues/21
 
 
-# Changelog for 1.0.0
+## [1.0.0]() (2022-06-23)
 
 The following sections list the changes for 1.0.0.
 
-## Summary
+### Summary
 
  * Chg #23: Dropped support for latest and recommended
  * Chg #23: Replaced Forge version source URL
 
-## Details
+### Details
 
  * Change #23: Dropped support for latest and recommended
 
@@ -52,16 +53,16 @@ The following sections list the changes for 1.0.0.
    https://github.com/kleister/go-forge/issues/23
 
 
-# Changelog for 0.2.1
+## [0.2.1]() (2018-11-05)
 
 The following sections list the changes for 0.2.1.
 
-## Summary
+### Summary
 
  * Chg #2: Switch to go modules instead of gopkg
  * Chg #2: Use standard JSON parser instead of jsoniter
 
-## Details
+### Details
 
  * Change #2: Switch to go modules instead of gopkg
 
@@ -77,34 +78,17 @@ The following sections list the changes for 0.2.1.
    https://github.com/kleister/go-forge/pull/2
 
 
-# Changelog for 0.1.0
-
-The following sections list the changes for 0.1.0.
-
-## Summary
-
- * Chg #23: Initial release of basic version
-
-## Details
-
- * Change #23: Initial release of basic version
-
-   Just prepared an initial basic version which could be released to the public.
-
-   https://github.com/kleister/go-forge/issues/23
-
-
-# Changelog for 0.2.0
+## [0.2.0]() (2018-08-15)
 
 The following sections list the changes for 0.2.0.
 
-## Summary
+### Summary
 
  * Chg #1: Integrate the sortable interface
  * Chg #1: Integrate a version filter
  * Chg #23: Limited list of versions
 
-## Details
+### Details
 
  * Change #1: Integrate the sortable interface
 
@@ -124,5 +108,22 @@ The following sections list the changes for 0.2.0.
 
    To reduce the complexity of the list of available versions we added a default limit to list only
    versions for Minecraft newer than v1.6.4.
+
+   https://github.com/kleister/go-forge/issues/23
+
+
+## [0.1.0]() (2018-08-15)
+
+The following sections list the changes for 0.1.0.
+
+### Summary
+
+ * Chg #23: Initial release of basic version
+
+### Details
+
+ * Change #23: Initial release of basic version
+
+   Just prepared an initial basic version which could be released to the public.
 
    https://github.com/kleister/go-forge/issues/23
