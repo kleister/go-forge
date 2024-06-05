@@ -1,4 +1,14 @@
-# Changelog for 1.0.1
+# Changelog
+
+## [2.0.0](https://github.com/kleister/go-forge/compare/v1.0.1...v2.0.0) (2024-06-05)
+
+
+### Features
+
+* apply new repo structure and integrate automated releases ([ff0488e](https://github.com/kleister/go-forge/commit/ff0488e7c1245a5ebed2bebd295347ef4e24bb70))
+* **major:** update actions/setup-go action to v4 ([#26](https://github.com/kleister/go-forge/issues/26)) ([c79cbbe](https://github.com/kleister/go-forge/commit/c79cbbe047d50d38192fccbcdf46912c15fa5f7f))
+
+for 1.0.1
 
 The following sections list the changes for 1.0.1.
 
@@ -116,5 +126,3 @@ The following sections list the changes for 0.2.0.
    versions for Minecraft newer than v1.6.4.
 
    https://github.com/kleister/go-forge/issues/23
-
-
