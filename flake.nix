@@ -55,8 +55,6 @@
           devenv = {
             shells = {
               default = {
-                name = "go-forge";
-
                 git-hooks = {
                   hooks = {
                     nixfmt-rfc-style = {
