@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/kleister/go-forge/compare/v2.0.0...v2.1.0) (2025-04-14)
+
+
+### Features
+
+* upgrade revive and golangci-lint and make lint happy ([a3d697b](https://github.com/kleister/go-forge/commit/a3d697b6a0893c9b7551e1ea2fc49cc0c47df2b1))
+
 ## [2.0.0](https://github.com/kleister/go-forge/compare/v1.0.1...v2.0.0) (2024-06-05)
 
 
