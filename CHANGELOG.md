@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/kleister/go-forge/compare/v2.2.2...v2.3.0) (2025-06-02)
+
+
+### Features
+
+* **deps:** update module github.com/mgechev/revive to v1.10.0 ([#62](https://github.com/kleister/go-forge/issues/62)) ([54db76d](https://github.com/kleister/go-forge/commit/54db76dfc073bcbdd1323afa5409eba5788b9025))
+
 ## [2.2.2](https://github.com/kleister/go-forge/compare/v2.2.1...v2.2.2) (2025-05-05)
 
 
