@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.5.0](https://github.com/kleister/go-forge/compare/v2.4.0...v2.5.0) (2025-07-14)
+
+
+### Features
+
+* **deps:** update module github.com/mgechev/revive to v1.11.0 ([#67](https://github.com/kleister/go-forge/issues/67)) ([e8e7ad6](https://github.com/kleister/go-forge/commit/e8e7ad610f555058767df579b8bf3d0da64a80ec))
+
+
+### Bugfixes
+
+* **deps:** update module github.com/golangci/golangci-lint/v2 to v2.2.2 ([#66](https://github.com/kleister/go-forge/issues/66)) ([eb61343](https://github.com/kleister/go-forge/commit/eb6134387d93b41ea15b8b3dc23185a8a539c3a0))
+
 ## [2.4.0](https://github.com/kleister/go-forge/compare/v2.3.0...v2.4.0) (2025-06-30)
 
 
