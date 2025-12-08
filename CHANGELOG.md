@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.0](https://github.com/kleister/go-forge/compare/v2.7.1...v2.8.0) (2025-12-08)
+
+
+### Features
+
+* **minor:** update module github.com/golangci/golangci-lint/v2 to v2.7.0 ([#90](https://github.com/kleister/go-forge/issues/90)) ([8fc80e0](https://github.com/kleister/go-forge/commit/8fc80e00a3f899a5c30d06fdd8a090de027afcaf))
+
 ## [2.7.1](https://github.com/kleister/go-forge/compare/v2.7.0...v2.7.1) (2025-11-17)
 
 
