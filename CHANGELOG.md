@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.9.0](https://github.com/kleister/go-forge/compare/v2.8.0...v2.9.0) (2026-08-10)
+
+### Features
+
+* restructure repo and build processes ([a7ba64a](https://github.com/kleister/go-forge/commit/a7ba64a248459cabfff85f5eb502903d20efff93))
+
+### Dependencies
+
+* **minor:** update dependency golangci-lint to v2.12.2 ([#108](https://github.com/kleister/go-forge/issues/108)) ([62c1394](https://github.com/kleister/go-forge/commit/62c1394a5632af691f1b687f8322a39a995228ba))
+
 ## [2.8.0](https://github.com/kleister/go-forge/compare/v2.7.1...v2.8.0) (2025-12-08)
 
 
