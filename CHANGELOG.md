@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.1](https://github.com/kleister/go-forge/compare/v2.9.0...v2.9.1) (2026-08-17)
+
+### Dependencies
+
+* **patch:** update dependency go to v1.26.6 ([#112](https://github.com/kleister/go-forge/issues/112)) ([6a13c76](https://github.com/kleister/go-forge/commit/6a13c76afb9f243ead98c161b95d5414191548c7))
+* **patch:** update dependency pre-commit to v4.6.2 ([#111](https://github.com/kleister/go-forge/issues/111)) ([1e12969](https://github.com/kleister/go-forge/commit/1e12969bd468acdb936606b1836cc3f164f2c3ae))
+
 ## [2.9.0](https://github.com/kleister/go-forge/compare/v2.8.0...v2.9.0) (2026-08-10)
 
 ### Features
