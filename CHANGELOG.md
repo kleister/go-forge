@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.10.0](https://github.com/kleister/go-forge/compare/v2.9.1...v2.10.0) (2026-08-24)
+
+### Dependencies
+
+* **minor:** update dependency go to v1.27.0 ([#114](https://github.com/kleister/go-forge/issues/114)) ([01860d9](https://github.com/kleister/go-forge/commit/01860d9320181511397af243c838a4445e93dad7))
+* **minor:** update dependency golangci-lint to v2.13.0 ([#115](https://github.com/kleister/go-forge/issues/115)) ([47e1442](https://github.com/kleister/go-forge/commit/47e144272c1caaa4bf1e06c575c0022f59fbc00e))
+* **minor:** update dependency task to v3.53.1 ([#113](https://github.com/kleister/go-forge/issues/113)) ([f8ed7b7](https://github.com/kleister/go-forge/commit/f8ed7b7c2a682fbbe85c642a80beeca2c6fd0a74))
+* **patch:** update dependency golangci-lint to v2.13.1 ([#116](https://github.com/kleister/go-forge/issues/116)) ([b848357](https://github.com/kleister/go-forge/commit/b8483578a3a8bee42395ec0ca706557a837535b9))
+
 ## [2.9.1](https://github.com/kleister/go-forge/compare/v2.9.0...v2.9.1) (2026-08-17)
 
 ### Dependencies
