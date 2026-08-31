@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.10.1](https://github.com/kleister/go-forge/compare/v2.10.0...v2.10.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency golangci-lint to v2.13.2 ([#118](https://github.com/kleister/go-forge/issues/118)) ([139ca83](https://github.com/kleister/go-forge/commit/139ca83dc7fc83da1178cce924bcd23d34b482f4))
+
 ## [2.10.0](https://github.com/kleister/go-forge/compare/v2.9.1...v2.10.0) (2026-08-24)
 
 ### Dependencies
