@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.10.2](https://github.com/kleister/go-forge/compare/v2.10.1...v2.10.2) (2026-09-07)
+
+### Dependencies
+
+* **patch:** update dependency go to v1.27.1 ([#120](https://github.com/kleister/go-forge/issues/120)) ([2f1b785](https://github.com/kleister/go-forge/commit/2f1b7850a368b20ca8ac70f2cbfe27a4ae11cee9))
+
 ## [2.10.1](https://github.com/kleister/go-forge/compare/v2.10.0...v2.10.1) (2026-08-31)
 
 ### Dependencies
